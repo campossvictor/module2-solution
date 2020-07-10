@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment Module 2</title>
+
+        <style>
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    border: 0px;
+}
+
+body{
+    background-color:#f0f0f5;
+}
+
+
+/* === MOBILE RESOLUTION === */
+h1{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.row {
+   width:100%;
+   font-family: Helvetica, sans-serif;
+}
+
+section {
+    margin:0px 15px 15px 15px;
+}
+
+article {
+    background-color:#c9c9c7;
+    border:1px black solid;
+    border-radius: 5px;
+    position: relative;
+    height: 210px;
+    overflow:auto;
+}
+article:hover {
+    background-color:white;
+    transition:300ms;
+}
+
+span {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 3px;
+}
+
+#span1 {
+background-color: red;
+}
+#span2 {
+background-color:green;
+}
+#span3 {
+background-color:blue;
+}
+
+#span1:hover, #span2:hover, #span3:hover {
+    background-color:black;
+    transition:200ms;
+}
+
+a {
+    color:white;
+    text-decoration:none;
+}
+
+article > div {
+    padding: 10px;
+}
+div > p {
+    margin-top: 35px;
+    text-align: justify;
+}
+
+
+/* === DESKTOP RESOLUTION === */
+@media (min-width: 992px){
+
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6,
+    .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
+    float:left;
+    }
+    #article1{
+        width:32.7%;
+    }
+    #article2{
+        width:32.7%;
+        margin:0 9px;
+    }
+    #article3{
+        width:32.7%;
+    }
+
+    
+/* === default === */
+    .col-lg-1{
+        width:8.33%;
+    }
+    .col-lg-2{
+        width:16.66%;
+    }
+    .col-lg-3{
+        width:25%;
+    }
+    .col-lg-4{
+        width:33.33%
+    }
+    .col-lg-5{
+        width: 41.66%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    .col-lg-8 {
+        width: 66.66%;
+    }
+    .col-lg-9 {
+        width: 74.99%;
+    }
+    .col-lg-10 {
+        width: 83.33%;
+    }
+    .col-lg-11 {
+        width: 91.66%;
+    }
+    .col-lg-12 {
+        width: 100%;
+    }
+}
+
+
+/* === TABLET RESOLUTION === */
+@media (min-width: 768px) and (max-width: 991px){
+
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+    .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
+    float: left;
+    }
+    
+    #article1 {
+        width:49%;
+        margin-right: 14px;
+    }
+
+    #article2 {
+        width:49%;
+    }
+
+    #article3 {
+        width:100%;
+        margin-top: 15px;
+    }
+
+/* === default === */
+    .col-md-1 {
+        width:8.33%;
+    }
+    .col-md-2 {
+        width:16.66%;
+    }
+    .col-md-3 {
+        width:25%;
+    }
+    .col-md-4 {
+        width:33.33%
+    }
+    .col-md-5{
+        width: 41.66%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-7 {
+        width: 58.33%;
+    }
+    .col-md-8 {
+        width: 66.66%;
+    }
+    .col-md-9 {
+        width: 74.99%;
+    }
+    .col-md-10 {
+        width: 83.33%;
+    }
+    .col-md-11 {
+        width: 91.66%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+</style>
+         
+    </head>
+    <body>
+        <h1>Counter-Strike: Global Offensive (CS:GO)</h1>
+        <div class="row">
+            <section id='section1'>
+                <article id="article1" class="col-md-6 col-lg-4">
+                    <span id="span1">
+                        <a href="https://www.youtube.com/watch?v=13VdzfBq3FA" target="_blank">
+                            <h5>What is CS:GO?</h5>
+                        </a>
+                    </span>
+                    <div>
+                        <p id='p1'>
+                            Counter-Strike: Global Offensive (CS:GO) is a multiplayer first-person shooter video game developed by Valve and Hidden Path Entertainment
+                        </p>
+                    </div>
+
+                </article>
+            </section>
+
+            <section id='section2'>
+                <article id="article2" class="col-md-6 col-lg-4">
+                    <span id="span2">
+                        <a href="https://steamcommunity.com/app/730/guides/?searchText=&browsefilter=trend&browsesort=creationorder&requiredtags%5B%5D=-1" target="_blank">
+                            <h5>How to play?</h5>
+                        </a>
+                    </span>
+                    <div>
+                        <p id="p2">
+                            The game pits two teams against each other: the Terrorists and the Counter-Terrorists. Both sides are tasked with eliminating the other while also completing separate objectives. The Terrorists, depending on the game mode, must either plant the bomb or defend the hostages, while the Counter-Terrorists must either prevent the bomb from being planted, defuse the bomb, or rescue the hostages
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <section id='section3'>
+                <article id="article3" class="col-md-6 col-lg-4">
+                    <span id="span3">
+                        <a href="https://liquipedia.net/counterstrike/Counter-Strike:_Global_Offensive" target="_blank">
+                            <h5>Game modes</h5>
+                        </a>
+                    </span>
+                    <div>
+                        <p id="p3">
+                            There are nine game modes, all of which have distinct characteristics specific to that mode. The game also has matchmaking support that allows players to play on dedicated Valve servers, as well as allowing members of the community to host their own servers with custom maps and game modes. A battle-royale game-mode, "Danger Zone", was introduced in 2018.
+                        </p>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+    </body>
+</html>
